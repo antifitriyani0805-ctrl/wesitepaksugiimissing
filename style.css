@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    background: #050b1a;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+}
+
+.navbar span {
+    color: #00f5ff;
+}
+
+.navbar a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #00f5ff;
+}
+
+/* Hero */
+.hero {
+    height: 90vh;
+    background: linear-gradient(135deg, #050b1a, #0a1cff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glass {
+    background: rgba(255,255,255,0.1);
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 40px #00f5ff;
+}
+
+.glass h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #00f5ff;
+    color: black;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+/* Layanan */
+.layanan {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    background: rgba(255,255,255,0.08);
+    padding: 30px;
+    border-radius: 20px;
+    transition: 0.4s;
+    box-shadow: 0 0 15px #00f5ff44;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px #00f5ff;
+}
+
+.neon {
+    border: 2px solid #00f5ff;
+}
+
+/* Harga */
+.harga {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.price-box {
+    max-width: 500px;
+    margin: auto;
+    background: rgba(255,255,255,0.08);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.price-box p {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.highlight {
+    color: #00f5ff;
+}
+
+/* Kritik */
+.kritik {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form input, .form textarea {
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+}
+
+.form button {
+    padding: 15px;
+    background: #00f5ff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: #aaa;
+}
+
+/* Responsive */
+@media (max-width:600px) {
+    .glass h2 {
+        font-size: 28px;
+    }
+}/* Kontak */
+.kontak {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contact-box {
+    max-width: 500px;
+    margin: auto;
+    background: rgba(255,255,255,0.08);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #00f5ff44;
+}
+
+.contact-item {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.wa-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 30px;
+    background: #00f5ff;
+    color: black;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 20px #00f5ff;
+    transition: 0.3s;
+}
+
+.wa-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px #00f5ff;
+}
+/* Kata Pengantar */
+.pengantar {
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.pengantar-box {
+    max-width: 900px;
+    background: rgba(255,255,255,0.08);
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 0 40px #00f5ff33;
+    text-align: center;
+}
+
+.pengantar-box h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #00f5ff;
+}
+
+.pengantar-box p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.tagline {
+    margin-top: 25px;
+    font-weight: bold;
+    color: #00f5ff;
+    letter-spacing: 1px;
+}
+
